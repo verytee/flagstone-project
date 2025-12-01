@@ -11,7 +11,7 @@
 
 
 
-/* Typography setup */
+/* Styles setup */
 :root {
         --primary-font: "Open Sans", sans-serif;
         --secondary-font: "Poppins", sans-serif;
@@ -19,6 +19,11 @@
     --secondary-color: #558c8c; /* teal */
     --highlight-color: #927f78; /* brown */
     --highlight-color-light: #fdf6ed; /* light */
+}
+
+body {
+    background-color: #fdf6ed;
+    font-family: var(--primary-font);
 }
 
 /*navbar styles */
@@ -40,16 +45,27 @@
 
 /* Hero section */
 #hero {
-    display: flex;
-    justify-content: center;
+    width: 100%;
     overflow: hidden;
 }
 
 #hero img {
     width: 100%;
-    max-width: 800px;
     height: auto;
     object-fit: cover;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    border: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    position: relative;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 10;
 }
 
 
@@ -58,7 +74,21 @@
 
 @media (min-width: 768px) {
     #hero img {
-        max-width: 100%;
-        height: 500px;
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+    }
+
+    .btn {
+        position: relative;
+        margin-top: -120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn {
+        position: relative;
+        margin-top: -180px;
     }
 }
