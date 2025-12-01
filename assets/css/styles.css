@@ -7,6 +7,7 @@
 #927f78 - brown
 #1e1d1b - dark text
 #fdf6ed - light
+#f8f9fa - light grey
 */
 
 
@@ -24,6 +25,9 @@
 body {
     background-color: #fdf6ed;
     font-family: var(--primary-font);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2 {
@@ -34,7 +38,7 @@ h1, h2 {
     background-color: var(--secondary-color);
     border: none;
     font-family: var(--secondary-font);
-    color: var(--primary-color);
+    color: var(--highlight-color-light);
     border-radius: 8px;
     padding: 0.5rem 1rem;
     min-height: 60px;
@@ -90,6 +94,30 @@ h1, h2 {
     font-weight: 600;
 }
 
+/* Links section */
+#links {
+    padding-bottom: 100px !important;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+footer .teal {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+footer .brown {
+    color: var(--highlight-color);
+    font-weight: 500;
+}
 
 
 
