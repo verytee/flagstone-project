@@ -37,3 +37,28 @@
     color: var(--highlight-color);
     font-weight: 500;
 }
+
+/* Hero section */
+#hero {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/*media queries for responsiveness */
+
+@media (min-width: 768px) {
+    #hero img {
+        max-width: 100%;
+        height: 500px;
+    }
+}
