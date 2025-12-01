@@ -26,6 +26,24 @@ body {
     font-family: var(--primary-font);
 }
 
+h1, h2 {
+    color: #558c8c;
+}
+
+.sub-heading-color {
+    background-color: var(--secondary-color);
+    border: none;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.card {
+    background-color: var(--highlight-color-light);
+    border: none;
+}
+
 /*navbar styles */
 .navbar {
     background-color: var(--highlight-color-light);
@@ -71,6 +89,14 @@ body {
 
 
 /*media queries for responsiveness */
+
+/* Extra small devices (phones, less than 576px) were showing up with navbar on two lines */
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        font-size: 0.85rem;
+    }
+}
 
 @media (min-width: 768px) {
     #hero img {
