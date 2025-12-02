@@ -65,6 +65,7 @@ h2 {
     /* make all the cards align height */
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .card-body {
