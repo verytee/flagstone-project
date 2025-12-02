@@ -216,9 +216,13 @@ body > footer .brown {
         padding-right: 3rem;
     }
     
-    /* More spacing between cards - AI ADDED THIS */
+    /* More spacing between cards - AI added this on my request */
     .row.g-4 {
         --bs-gutter-x: 3rem;
         --bs-gutter-y: 3rem;
+    }
+
+    #hero img {
+        height: 10%;
     }
 }
