@@ -200,3 +200,25 @@ body > footer .brown {
         font-size: 0.85rem;
     }
 }
+
+/* Extra large screens - full width navbar */
+@media (min-width: 1200px) {
+    .navbar .container {
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    /* Wider containers for sections */
+    .container {
+        max-width: 90%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    /* More spacing between cards - AI ADDED THIS */
+    .row.g-4 {
+        --bs-gutter-x: 3rem;
+        --bs-gutter-y: 3rem;
+    }
+}
