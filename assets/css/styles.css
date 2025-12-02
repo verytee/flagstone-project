@@ -60,8 +60,16 @@ h2 {
     background-color: var(--highlight-color-light);
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+    /* make all the cards align height */
+    display: flex;
+    flex-direction: column;
 }
 
+.card-body {
+    flex-grow: 1;
+}
 
 /* Hover effect for cards to make the site more responsive */
 #effects .card:hover,
@@ -75,6 +83,15 @@ h2 {
     background-color: var(--highlight-color-light);
     font-family: var(--secondary-font);
     font-weight: 600;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add padding to body to prevent content from hiding under fixed navbar */
+body {
+    padding-top: 56px;
 }
 
 .navbar .teal {
@@ -114,6 +131,14 @@ h2 {
     background-color: var(--highlight-color);
     border-color: var(--highlight-color);
     color: var(--highlight-color-light);
+
+    /* Ensuring buttons are uniform size, AI helped me with this */
+    white-space: normal;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Hover effect for link buttons */
