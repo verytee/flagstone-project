@@ -39,7 +39,7 @@ h1,
 h2 {
     font-family: var(--secondary-font);
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--highlight-color);
 }
 
 .sub-heading {
@@ -47,7 +47,7 @@ h2 {
     border: none;
     font-family: var(--secondary-font);
     color: var(--highlight-color-light);
-    border-radius: 8px;
+    border-radius: 0;
     padding: 0.5rem 1rem;
     min-height: 60px;
     display: flex;
@@ -83,6 +83,7 @@ h2 {
     background-color: var(--highlight-color-light);
     font-family: var(--secondary-font);
     font-weight: 600;
+    /* Making navbar fixed to top */
     position: fixed;
     top: 0;
     width: 100%;
