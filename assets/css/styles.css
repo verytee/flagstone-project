@@ -34,6 +34,14 @@ body {
     flex-direction: column;
 }
 
+/* Headings styles */
+h1,
+h2 {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 .sub-heading {
     background-color: var(--secondary-color);
     border: none;
@@ -62,7 +70,7 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/*navbar styles */
+/*navbar and used again in footer styles */
 .navbar {
     background-color: var(--highlight-color-light);
     font-family: var(--secondary-font);
@@ -79,7 +87,7 @@ body {
     font-weight: 500;
 }
 
-/* Hero section */
+/* Hero section styles */
 #hero {
     width: 100%;
     overflow: hidden;
@@ -91,16 +99,16 @@ body {
     height: 10%;
     }
 
+    /* Hero button styles */
 #hero .btn {
 
     background-color: var(--secondary-color);
     border: none;
     font-family: var(--secondary-font);
     font-weight: 600;
-
 }
 
-/* Links section */
+/* Links section styles */
 
 #links .btn-outline-primary {
     background-color: var(--highlight-color);
@@ -108,20 +116,19 @@ body {
     color: var(--highlight-color-light);
 }
 
-
+/* Hover effect for link buttons */
 #links .btn-outline-primary:hover {
-    background-color: var(--highlight-color);
+    background-color: var(--highlight-color-light);
     border-color: var(--highlight-color);
     color: var(--highlight-color);
 }
-
-/* Affirmations section */
+/* Affirmations section was not visible with the footer */
 #positive-affirmations {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 
 
-/* Giving people more time to read the text */
+/* Giving people more time to read the text as it was too fast */
 #positive-affirmations .carousel-item {
     transition: transform 6s ease-in-out;
 }
@@ -136,6 +143,8 @@ body > footer {
     z-index: 100;
 }
 
+/* Reusing navbar colours in footer */
+
 body > footer .teal {
     color: var(--secondary-color);
     font-weight: 500;
@@ -146,7 +155,7 @@ body > footer .brown {
     font-weight: 500;
 }
 
-/* Blockquote footers should remain visible */
+/* Blockquote footers remain visible */
 .blockquote-footer {
     position: static !important;
     color: #6c757d;
@@ -164,6 +173,3 @@ body > footer .brown {
         font-size: 0.85rem;
     }
 }
-
-
-
