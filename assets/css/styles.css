@@ -51,6 +51,15 @@ body {
 .card {
     background-color: var(--highlight-color-light);
     border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover effect for cards to make the site more responsive */
+#effects .card:hover,
+#coping .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /*navbar styles */
@@ -101,16 +110,24 @@ body {
 
 
 #links .btn-outline-primary:hover {
-    background-color: var(--highlight-color-light);
+    background-color: var(--highlight-color);
     border-color: var(--highlight-color);
     color: var(--highlight-color);
 }
 
+/* Affirmations section */
+#positive-affirmations {
+    padding-bottom: 100px;
+}
 
 
+/* Giving people more time to read the text */
+#positive-affirmations .carousel-item {
+    transition: transform 6s ease-in-out;
+}
 
 /* Footer styles */
-footer {
+body > footer {
     background-color: #f8f9fa;
     padding: 1rem 0;
     position: fixed;
@@ -119,14 +136,20 @@ footer {
     z-index: 100;
 }
 
-footer .teal {
+body > footer .teal {
     color: var(--secondary-color);
     font-weight: 500;
 }
 
-footer .brown {
+body > footer .brown {
     color: var(--highlight-color);
     font-weight: 500;
+}
+
+/* Blockquote footers should remain visible */
+.blockquote-footer {
+    position: static !important;
+    color: #6c757d;
 }
 
 
