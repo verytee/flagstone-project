@@ -92,9 +92,7 @@ body {
 }
 
 /* Links section */
-#links {
-    padding-bottom: 100px !important;
-}
+
 
 #links .btn-outline-primary {
     border-color: var(--highlight-color);
