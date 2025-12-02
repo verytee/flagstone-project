@@ -24,7 +24,7 @@
 
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
-}
+} 
 
 body {
     background-color: var(--highlight-color-light);
