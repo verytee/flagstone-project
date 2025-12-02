@@ -127,6 +127,14 @@ body {
     font-weight: 600;
 }
 
+#hero .btn:hover {
+
+    background-color: var(--highlight-color);
+    border: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
 /* Links section styles */
 
 #links .btn-outline-primary {
