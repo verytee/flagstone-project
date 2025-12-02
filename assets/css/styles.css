@@ -93,17 +93,19 @@ body {
 
 /* Links section */
 
-
 #links .btn-outline-primary {
-    border-color: var(--highlight-color);
-    color: var(--highlight-color);
-}
-
-#links .btn-outline-primary:hover {
     background-color: var(--highlight-color);
     border-color: var(--highlight-color);
     color: var(--highlight-color-light);
 }
+
+
+#links .btn-outline-primary:hover {
+    background-color: var(--highlight-color-light);
+    border-color: var(--highlight-color);
+    color: var(--highlight-color);
+}
+
 
 
 
